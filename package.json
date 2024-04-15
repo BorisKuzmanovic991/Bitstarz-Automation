@@ -1,0 +1,16 @@
+{
+  "name": "bitstarztest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "automation.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "playwright": "^1.43.1",
+    "typescript": "^5.4.5"
+  }
+}

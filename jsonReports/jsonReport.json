@@ -1,0 +1,136 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\HP\\OneDrive\\Desktop\\bitstarztest\\playwright.config.ts",
+    "rootDir": "C:/Users/HP/OneDrive/Desktop/bitstarztest",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/HP/OneDrive/Desktop/bitstarztest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/HP/OneDrive/Desktop/bitstarztest",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/automation.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.43.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\automation.ts",
+      "file": "tests/automation.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 16528,
+                  "error": {
+                    "message": "Error: page.fill: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('input[placeholder=\"Create username\"]')\u001b[22m\n",
+                    "stack": "Error: page.fill: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('input[placeholder=\"Create username\"]')\u001b[22m\n\n    at C:\\Users\\HP\\OneDrive\\Desktop\\bitstarztest\\tests\\automation.ts:13:14",
+                    "location": {
+                      "file": "C:\\Users\\HP\\OneDrive\\Desktop\\bitstarztest\\tests\\automation.ts",
+                      "column": 14,
+                      "line": 13
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[placeholder=\"Enter your email\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'b.kuzmanovic7+47@gmail.com'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Continue\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[placeholder=\"Create username\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'borisautomation'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Continue\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[placeholder=\"Password\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bk1234567.'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Continue\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\HP\\OneDrive\\Desktop\\bitstarztest\\tests\\automation.ts",
+                        "column": 14,
+                        "line": 13
+                      },
+                      "message": "Error: page.fill: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('input[placeholder=\"Create username\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[placeholder=\"Enter your email\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'b.kuzmanovic7+47@gmail.com'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Continue\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[placeholder=\"Create username\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'borisautomation'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Continue\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m'input[placeholder=\"Password\"]'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'Bk1234567.'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m'button:has-text(\"Continue\")'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\HP\\OneDrive\\Desktop\\bitstarztest\\tests\\automation.ts:13:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-15T08:43:05.822Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\HP\\OneDrive\\Desktop\\bitstarztest\\tests\\automation.ts",
+                    "column": 14,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6343c69e4873c510c29f-a482ddbd2e00f5fea071",
+          "file": "tests/automation.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-04-15T08:43:04.231Z",
+    "duration": 19123.548,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
